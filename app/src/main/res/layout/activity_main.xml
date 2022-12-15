@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img_fondo"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:flow_verticalGap="100in"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+
+        >
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="280dp"
+            android:layout_height="340dp"
+            android:layout_gravity="center"
+            />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="#81000000"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:flow_verticalGap="100in">
+
+        <LinearLayout
+            android:layout_below="@+id/textView6"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Traducir"
+                android:textColor="#e7c500"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/voiceInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Seleccione el microfono..."
+                android:textColor="#01c4e7"
+                android:textColorHint="#01c4e7"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:orientation="vertical"
+
+            >
+            <ImageButton
+                android:id="@+id/btnSpeak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/speak"
+                android:onClick="onClick"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textViewDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:text="VALORES"
+        android:textColor="#01c4e7"
+        />
+
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traducir"
+        android:width="150dp"
+        android:layout_marginTop="15dp"
+        />
+
+
+</LinearLayout>
