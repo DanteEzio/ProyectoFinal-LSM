@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseFirestore db;
 
     //Este pequeño modulo fue creado para revisar que los datos obtenidos fueran correctos
-    TextView viewDatos;
+    //TextView viewDatos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         voiceInput = findViewById(R.id.voiceInput);
 
         //Modulo de prueba
-        viewDatos = findViewById(R.id.textViewDatos);
+        //viewDatos = findViewById(R.id.textViewDatos);
 
         //Creamos la instancia de nuestra Base de Datos
         db = FirebaseFirestore.getInstance();
@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
                         double similitud = (cosine.similarity(profile1,profile2));
 
                         //viewDatos.setText(String.valueOf(similitud));
-                        viewDatos.setText(s1 + " - " + similitud);
+                        //viewDatos.setText(s1 + " - " + similitud);
 
                         if(similitud >= 0.85) {
                             bandera = true;
